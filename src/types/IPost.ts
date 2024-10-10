@@ -1,0 +1,27 @@
+export interface IPost {
+  id: number,
+  title: string,
+  text: string,
+  creatorId: number,
+  likesCount: number,
+  isLiked: boolean,
+  creator: {
+    id: number,
+    firstName: string,
+    lastName: string,
+    nickName: string | null,
+    phone: number,
+    email: string,
+    updateTime: string,
+    createTime: string,
+    avatarId: number,
+    pinnedPostId: number,
+    description: string,
+  },
+  tags: {
+    title: string,
+  }[],
+  imageId: number | null,
+  createTime: string,
+  updateTime: string,
+}

@@ -1,0 +1,43 @@
+@import 'style';
+
+.BurgerMenuLink {
+  &{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  
+    padding: 12px;
+  
+    color: $gray-dark;
+    text-decoration: none;
+  }
+
+  &:hover {
+    animation: menu-link 700ms ease 0s 1 forwards;
+    @keyframes menu-link {
+      10%{
+        gap: 8px;
+      }
+      100%{
+        font-weight: 600;
+        gap: 14px;
+      }
+    }
+  }
+
+  &.BurgerMenuLink_active  {
+    span {
+      font-weight: 500;
+      color: $primary-dark;
+    }
+
+    svg [stroke]{
+      stroke: $primary-dark;
+    } 
+
+    svg [fill]{
+      fill: $primary-dark;
+    } 
+  }
+}

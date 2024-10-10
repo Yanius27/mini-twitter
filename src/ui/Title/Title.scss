@@ -1,0 +1,39 @@
+@import 'style';
+@import 'style/mixins';
+
+.Title {
+  @include text-style;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: default;
+
+  &.Title_page {
+    font-weight: 700;
+    line-height: 32px;
+    color: $title-text-color;
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+    }
+  
+    @media (min-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  &.Title_section {
+    font-weight: 700;
+    line-height: 24px;
+    color: $text-color;
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+    }
+  
+    @media (min-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+}

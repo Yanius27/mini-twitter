@@ -1,0 +1,17 @@
+@import 'style/mixins';
+
+.PostEditPage {
+  @include page-styles;
+
+  &{
+    padding-top: 0;
+  }
+
+  .ReturnButton {
+    margin: 8px 0 16px 0;
+  }
+
+  .Title {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,41 @@
+@import 'style';
+@import 'style/mixins';
+
+.LogoIcon {
+  &{
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    box-sizing: border-box;
+  
+    cursor: pointer
+  }
+
+  &.LogoIcon_small {
+    svg {
+      margin: 6px;
+
+      @media (max-width: 480px) {
+        width: 24px;
+        height: auto;
+      }
+     
+      @media (min-width: 481px) and (max-width: 1023px) {
+        width: 30px;
+        height: auto;
+      }
+    
+      @media (min-width: 1024px) {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+
+  &.LogoIcon_big {
+    svg {
+      width: 60px;
+      height: auto;
+    }
+  }
+}

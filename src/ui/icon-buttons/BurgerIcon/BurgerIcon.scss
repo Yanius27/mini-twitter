@@ -1,0 +1,14 @@
+@import 'style';
+@import 'style/mixins';
+
+.BurgerIcon {
+  @include icon-style;
+
+  
+  @media (min-width: 1024px) {
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

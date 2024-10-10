@@ -1,0 +1,11 @@
+@import 'style';
+@import 'style/mixins';
+
+.InputField {
+  @include ui-styles;
+  @include input-field-style;
+
+  &.InputField_error {
+    @include validate-error;
+  }
+}

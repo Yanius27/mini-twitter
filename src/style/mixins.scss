@@ -1,0 +1,180 @@
+@import 'style';
+
+@mixin page-styles {
+  @include text-style;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: auto;
+  padding: 24px 20px 40px;
+
+  text-align: center;
+  color: $text-color;
+
+  @media (min-width: 361px) and  (max-width: 480px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: 481px) and (max-width: 620px) {
+    width: 70%;
+  }
+
+  @media (min-width: 621px) and (max-width: 840px) {
+    width: 60%;
+  }
+
+  @media (min-width: 841px) and (max-width: 1023px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 35%;
+  }
+}
+
+@mixin text-style {
+  font-family: $font-family-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: $text-color;
+
+  white-space: nowrap;
+
+  cursor: default;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+ 
+  @media (min-width: 481px) and (max-width: 760px) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 761px) and (max-width: 1023px) {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@mixin post-title-style {
+  font-family: $font-family-primary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: $text-color;
+}
+
+@mixin ui-styles {
+  @include text-style;
+  
+  width: 100%;
+  max-width: 320px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  label {
+    align-self: flex-start;
+  }
+
+  @media (min-width: 480px) {
+    max-width: none;
+  }
+}
+
+@mixin btn-style {
+  width: 100%;
+  height: 56px;
+  height: 56px;
+  max-width: 320px;
+  padding: 16px 12px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  @media (min-width: 480px) {
+    max-width: none;
+  }
+}
+
+@mixin btn-icon-style {
+  background-color: $white;
+  border: 0;
+  padding: 0;
+
+  position: absolute;
+
+  pointer-events: none;
+}
+
+@mixin input-field-style {
+  position: relative;
+  gap: 4px;
+ 
+  input {
+    @include text-style;
+
+    width: 100%;
+    height: 46px;
+    padding: 11px 32px 11px 8px;
+  
+    position: relative;
+  
+    border: 1px solid $gray;
+    border-radius: 12px;
+  
+    box-sizing: border-box;
+  }
+}
+
+@mixin icon-style {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+@mixin input-icon-style {
+  @include icon-style;
+
+  position: absolute;
+  top: 31px;
+  right: 9px;
+}
+
+@mixin validate-error {
+  .ValidateError {
+    position: absolute;
+    top: -8px;
+    right: 0;
+
+    color: red;
+
+    font-size: 12px;
+  }
+
+  input {
+    border: 1px solid red;
+  }
+}

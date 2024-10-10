@@ -1,0 +1,104 @@
+@import 'style';
+@import 'style/mixins';
+
+.BurgerMenu {
+  @include ui-styles;
+
+  &{
+    width: 100%;
+    max-width: none;
+    height: calc(100% - 75px);
+    
+    align-items: flex-start;  
+    background-color: white;  
+    position: absolute;
+    z-index: 2;
+
+    &.BurgerMenu_active {
+      opacity: 0;
+      animation: appearance 600ms ease 0s 1 forwards;
+
+      @keyframes appearance {
+        0%{
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  
+    &.BurgerMenu_inactive {
+      animation: disappearance 600ms ease 0s 1 forwards;
+      @keyframes disappearance {
+        0%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100%{
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+      }
+    }
+  }
+
+  ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 0;
+    padding: 32px 16px;
+    
+    @media (min-width: 481px) {
+      padding-left: 50px;
+    }
+  
+    @media (min-width: 1024px) {
+      padding-left: 150px;
+    }
+  }
+
+  .BurgerMenu__item {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .BurgerMenu__footer {
+    &{
+      width: calc(100% - 20px);
+
+      margin: auto;
+      padding: 26px 16px;
+  
+      border-top: 1px solid #0000001A;
+  
+      box-sizing: border-box;
+
+      @media (min-width: 481px) {
+        padding-left: 50px;
+      }
+    
+      @media (min-width: 1024px) {
+        padding-left: 150px;
+      }
+    }
+   
+    button {
+      border: 0;
+      background-color: inherit;
+
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      color: $danger;
+
+      cursor: pointer;
+    }
+  }
+}
+

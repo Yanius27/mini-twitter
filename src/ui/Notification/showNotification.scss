@@ -1,0 +1,22 @@
+@import 'style';
+@import 'style/mixins';
+
+div.Notification { 
+  & {
+    padding: 16px;
+    border-radius: 12px;
+
+    background-repeat: no-repeat;
+    background-position: 16px 18px;
+  }
+
+  &.Notification_error {
+    background-color: $danger-light;
+    background-image: url('../../icons/Error.svg');
+  }
+
+  &.Notification_success {
+    background-color: $safety-light;
+    background-image: url('../../icons/Success.svg');
+  }
+}

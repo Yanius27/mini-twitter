@@ -1,0 +1,27 @@
+@import 'style';
+@import 'style/mixins';
+
+.ReturnButton {
+  @include text-style;
+
+  &{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    width: 79px;
+    margin: 0;
+    padding: 12px 0;
+    border: 0;
+
+    color: $return-button-color;
+
+    background-color: $white;
+
+    cursor: pointer
+  }
+
+  svg {
+    @include icon-style;
+  }
+}

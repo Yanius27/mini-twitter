@@ -1,0 +1,8 @@
+@import 'style';
+@import 'style/mixins';
+
+.ActionBar {
+  @include icon-style;
+
+  flex-shrink: 0;
+}

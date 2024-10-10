@@ -1,0 +1,17 @@
+@import 'style';
+
+.PostsList {
+  &{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+    text-align: left;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 40px;
+  }
+}

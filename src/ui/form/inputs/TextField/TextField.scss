@@ -1,0 +1,75 @@
+@import 'style';
+@import 'style/mixins';
+
+.TextField {
+  @include ui-styles;
+  @include input-field-style;
+
+  & {
+    position: relative;
+    margin-top: 24px;
+    padding: 6px 8px 11px 1px;
+    box-sizing: border-box;
+    border: 1px solid $gray;
+    border-radius: 12px;
+  }
+
+  label {
+    position: absolute;
+    top: -29px;
+  }
+
+  textarea {
+    width: 99%;
+    height: 81px;
+    min-height: 45px;
+    padding: 0px 18px 5px 8px;
+
+    position: relative;
+  
+    border: 0;
+
+    resize: vertical;
+  
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+  textarea:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  .TextField__resizeIcon {
+    @include btn-icon-style;
+
+    width: 24px;
+    height: 24px;
+
+    bottom: 4px;
+    right: 5px;
+  }
+
+  .ClearIcon {
+    top: -3px;
+    right: 5px;
+  }
+
+  &.TextField_error {
+    @include validate-error;
+
+    &{
+      border: 1px solid red;
+    }
+
+    .ValidateError {
+      top: -35px;
+    }
+  }
+}

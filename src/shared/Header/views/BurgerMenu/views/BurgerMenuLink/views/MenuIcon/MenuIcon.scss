@@ -1,0 +1,6 @@
+@import 'style';
+@import 'style/mixins';
+
+.MenuIcon {
+  @include icon-style;
+}

@@ -1,0 +1,6 @@
+@import 'style';
+@import 'style/mixins';
+
+.NewsPage {
+  @include page-styles;
+}

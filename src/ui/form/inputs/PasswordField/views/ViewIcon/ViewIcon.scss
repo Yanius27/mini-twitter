@@ -1,0 +1,6 @@
+@import 'style';
+@import 'style/mixins';
+
+.ViewIcon {
+  @include input-icon-style;
+}

@@ -1,0 +1,52 @@
+@import 'style';
+@import 'style/mixins';
+
+.HeaderBar {
+  @include ui-styles;
+
+  &{
+    width: 100%;
+    max-width: none;
+  
+    border-bottom: 1px solid #0000001A;
+  
+    flex-direction: row;
+    justify-content: space-between;
+  
+    box-sizing: border-box;
+
+    @media (max-width: 480px) {
+      height: 52px;
+      padding: 8px 16px;
+    }
+   
+    @media (min-width: 481px) and (max-width: 760px) {
+      height: 52px;
+      padding: 8px 40px;
+    }
+
+    @media (min-width: 761px) and (max-width: 1023px) {
+      height: 72px;
+      padding: 8px 50px;
+    }
+  
+    @media (min-width: 1024px) {
+      height: 72px;
+      padding: 8px 70px;
+    }
+  }
+
+  .HeaderBar__menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: 761px) {
+      gap: 30px;
+    }
+
+    .BurgerIcon {
+      @include icon-style;
+    }
+  }
+}

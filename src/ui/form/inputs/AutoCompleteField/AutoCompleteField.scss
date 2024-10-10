@@ -1,0 +1,54 @@
+@import 'style';
+@import 'style/mixins';
+
+.AutoCompleteField {
+  & {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      text-align: left;
+    }
+  }
+
+  div.AutoCompleteSelect#tags > div:first-of-type {
+    & {
+      border-radius: 12px;
+      padding: 11px 8px;
+  
+      text-align: left;
+    }
+
+    div:first-of-type {
+      div:first-of-type {
+        padding-left: 5px;
+      }
+    }
+
+    div {
+      padding: 0;
+      margin: 0;
+      gap: 5px;
+    }
+
+    div:first-of-type div {     
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    div:first-of-type div > div {
+      padding: 0 5px;
+    }
+
+    div:last-of-type {
+      span {
+        display: none;
+      }
+
+      div > svg {
+        display: none;
+      }
+    }
+  }
+}

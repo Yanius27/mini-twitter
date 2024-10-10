@@ -1,0 +1,63 @@
+@import 'style';
+@import 'style/mixins';
+
+.AuthTabs {
+  @include btn-style;
+
+  & { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 320px;
+    height: 54px;
+    padding: 4px;
+  
+    background-color: $gray;
+    box-sizing: border-box;
+  
+    position: relative;
+    
+    border-radius: 16px;
+  }
+
+  button {
+    @include icon-style;
+    @include text-style;
+
+    width: 50%;
+    height: 100%;
+    border-radius: 16px;
+  }
+
+  &.login {
+    .tab-login {
+      width: 154px;
+      height: 46px;
+      padding: 0;
+
+      border-radius: 12px;
+  
+      background-color: $primary-dark;
+      font-weight: 600;
+      color: $white;
+  
+      cursor: default;
+    }
+  }
+
+  &.registration {
+    .tab-registration {
+      width: 154px;
+      height: 46px;
+      padding: 0;
+
+      border-radius: 12px;
+  
+      background-color: $primary-dark;
+      font-weight: 600;
+      color: $white;
+  
+      cursor: default;
+    }
+  }
+}

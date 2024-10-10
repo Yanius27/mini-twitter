@@ -1,0 +1,18 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
+
+  button {
+    margin-top: 8px;
+  }
+
+  @media (min-width: 480px) {
+    margin: 0;
+    width: 380px;
+  }
+}
