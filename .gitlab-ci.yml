@@ -1,0 +1,8 @@
+stages:
+  - lint
+
+lint:
+  stage: lint
+  script:
+    - yarn
+    - yarn lint
