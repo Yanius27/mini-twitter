@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.b7ffc218.css",
-    "main.js": "./static/js/main.d7d2048f.js",
+    "main.css": "./static/css/main.c646c916.css",
+    "main.js": "./static/js/main.21000ca4.js",
     "static/media/Group.svg": "./static/media/Group.e01c53bba082b2554990bae35b756ec4.svg",
     "static/media/View_hide.svg": "./static/media/View_hide.314a2dc4e7624e499a5ae2c7e6d00c9b.svg",
     "static/media/Home.svg": "./static/media/Home.d4cf44d35556cda7b5e62d985d1e5fee.svg",
     "static/media/Error.svg": "./static/media/Error.5c3c8581747312af4ae0.svg",
     "static/media/Favorite.svg": "./static/media/Favorite.d739f1694f4f2e652fcb16b35d79fab1.svg",
-    "static/media/Subscribe.svg": "./static/media/Subscribe.c8f563dfd871c907a27a3c640f98179e.svg",
+    "static/media/Subscribe.svg": "./static/media/Subscribe.f9a6e3d11a69a8348c76482d5ec37113.svg",
     "static/media/View.svg": "./static/media/View.04c6707a13a35100fb1555822a1cdde1.svg",
     "static/media/User.svg": "./static/media/User.d0380526fedcc5d6e0aa6c79cae11ae6.svg",
     "static/media/ActionBar.svg": "./static/media/ActionBar.807c819e787046aec4d5ee1f04ea94df.svg",
@@ -21,11 +21,11 @@
     "static/media/Cross_8x8.svg": "./static/media/Cross_8x8.6f5450c725739f34ed3fb8dbc04238ce.svg",
     "static/media/Polygon.svg": "./static/media/Polygon.7d108de82af883f1946d.svg",
     "static/media/Arrow_left.svg": "./static/media/Arrow_left.c74cbffa0e5cd0953b956948a52df3e2.svg",
-    "main.b7ffc218.css.map": "./static/css/main.b7ffc218.css.map",
-    "main.d7d2048f.js.map": "./static/js/main.d7d2048f.js.map"
+    "main.c646c916.css.map": "./static/css/main.c646c916.css.map",
+    "main.21000ca4.js.map": "./static/js/main.21000ca4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7ffc218.css",
-    "static/js/main.d7d2048f.js"
+    "static/css/main.c646c916.css",
+    "static/js/main.21000ca4.js"
   ]
 }
